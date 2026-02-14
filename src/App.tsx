@@ -297,15 +297,15 @@ function App() {
 	const handleSendEmail = async () => {
 		try {
 			emailjs.send(
-				process.env.EMAILJS_SERVICE_ID!,
-				process.env.EMAILJS_TEMPLATE_ID!,
+				process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+				process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
 				{
-					to_email: process.env.RECIPIENT_EMAIL!,
+					to_email: process.env.REACT_APP_RECIPIENT_EMAIL!,
 					message: `Jenepher Apuya has accepted your Valentine's invitation! 🎉`,
 					timestamp: new Date().toLocaleString(),
 					name: "Valentine's Invitation",
 				},
-				process.env.EMAILJS_PUBLIC_KEY,
+				process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
 			);
 
 			console.log("Email Sent");
