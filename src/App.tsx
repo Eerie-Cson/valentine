@@ -68,7 +68,7 @@ const CAPTCHA_TOKEN = generateRandom16();
 const MATH_N = 7; // Σ_{k=1}^{7} k = 28
 const CORRECT_MATH_ANSWER = (MATH_N * (MATH_N + 1)) / 2; // Sum formula: n(n+1)/2
 const FIXED_DATE = "2026-02-23";
-const YES_BUTTON_DELAY = 15000; // 10 seconds in milliseconds
+const YES_BUTTON_DELAY = 30000; // 10 seconds in milliseconds
 
 // ============================================================================
 // MAIN COMPONENT
