@@ -101,7 +101,7 @@ function App() {
 		) {
 			initializeScatterGame();
 		}
-	}, [state.currentScreen]);
+	}, [state.currentScreen, state.scatterTiles.length]);
 
 	// Initialize the scatter game board
 	const initializeScatterGame = () => {
